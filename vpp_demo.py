@@ -1,32 +1,34 @@
 '''
-vpp 只报量建模   
-author: Huahsin Sun   
-necessary package: numpy, docplex, matplotlib   
+vpp 只报量建模    
+author: Huahsin Sun    
+necessary package: numpy, docplex, matplotlib    
 '''
-import numpy as np   
-from docplex.mp.model import Model   
-import matplotlib.pyplot as plt   
-from docplex.mp.context import Context   
+import numpy as np    
+from docplex.mp.model import Model    
+import matplotlib.pyplot as plt    
+from docplex.mp.context import Context    
 
 # Set up the default context for the optimization model
 
 
 
-context = Context.make_default_context()   
-context.cpus = 4   
 
-# Define PV power generation data for 24 hours   
-pv24 = np.array([   
+context = Context.make_default_context()    
+context.cpus = 4    
+
+# Define PV power generation data for 24 hours    
+pv24 = np.array([    
     
 ])
-pv24 = pv24 * 2  # Scale the PV data   
+pv24 = pv24 * 2  # Scale the PV data    
 
-# Define price data for 24 hours   
-price = np.array([   
+# Define price data for 24 hours    
+price = np.array([    
     
 ])
 
 # Define SOC (State of Charge) parameters for the energy storage system
+
 
 
 
